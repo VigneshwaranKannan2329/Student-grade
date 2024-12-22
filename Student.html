@@ -1,0 +1,44 @@
+<script>
+    function Calculate()
+    {
+     a=parseInt(form1.txtNum1.value);
+     b=parseInt(form1.txtNum2.value);
+     c=parseInt(form1.txtNum3.value);
+     d=parseInt(form1.txtNum4.value);
+     e=parseInt(form1.txtNum5.value);
+     result=a+b+c+d+e;
+     avg = result/5;
+    
+    document.write("The Total is  :"+ "<b>" + result  +  "<b>" + "</br>");
+    
+    document.write("The Avg is  :"+ "<b>" + avg  +  "<b>" + "</br>");
+    
+    if(avg > 50)
+    {
+        document.write("The Grade is  :"+ "<b>" + "Pass"  +  "<b>" );
+    
+    }
+    else
+    {
+        document.write("The Grade is  :"+ "<b>" + "Fail"  +  "<b>" );
+    }
+    }
+    </script>
+    <link rel="stylesheet" href="s.css">
+    
+    <html>
+    <head></head>
+    <body>
+        <h2>Student Marks</h2> 
+    <form name="form1">
+            <P>TAMIL:</P><INPUT type="textbox" name="txtNum1"> </br>
+            <P>ENGLISH:</P><INPUT type="textbox" name="txtNum2"> </br>
+            <P>MATHS:</P><INPUT type="textbox" name="txtNum3"> </br>
+            <P>SCIENCE:</P><INPUT type="textbox" name="txtNum4"> </br>
+            <P>SOCIAL:</P><INPUT type="textbox" name="txtNum5"> </br>
+                
+       
+    <INPUT type="button" Value="Calculate" onClick='Calculate()'>
+    </form>
+    </body>
+    </html>
